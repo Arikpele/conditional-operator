@@ -12,12 +12,12 @@ public class Main {
 
     public static void task1() {
         System.out.println("задача 1");
-        int age = 15;
+        int age = 22;
         if (age >= 18) {
-            System.out.println("Если возраст человека равен" + age + "то он совершеннолетний");
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
         }
         if (age < 18) {
-            System.out.println("Если возраст человека равен" + age + "то он не достиг совершеннолетия, нужно немного подождать");
+            System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать");
         }
     }
 
@@ -36,10 +36,10 @@ public class Main {
         System.out.println("задача 3");
         int speed = 70;
         if (speed >= 60) {
-            System.out.println("Если скорость" + speed + "км/ч, то придется заплатить штраф");
+            System.out.println("Если скорость " + speed + "км/ч, то придется заплатить штраф");
         }
         if (speed < 60) {
-            System.out.println("Если скорость" + speed + "км/ч, то можно ездить спокойно");
+            System.out.println("Если скорость " + speed + "км/ч, то можно ездить спокойно");
         }
     }
 
@@ -47,19 +47,19 @@ public class Main {
         System.out.println("задача 4");
         int age = 32;
         if (age >= 2 && age < 6) {
-            System.out.println("Если возраст человека равен" + age + "то ему нужно ходить в детский сад");
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в детский сад");
         }
 
         if (age >= 7 && age < 18) {
-            System.out.println("Если возраст человека равен" + age + "то ему нужно ходить в школу");
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в школу");
         }
 
         if (age >= 18 && age < 24) {
-            System.out.println("Если возраст человека равен" + age + "то ему нужно ходить в университет");
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить в университет");
         }
 
         if (age >= 24) {
-            System.out.println("Если возраст человека равен" + age + "то ему нужно ходить на работу");
+            System.out.println("Если возраст человека равен " + age + ", то ему нужно ходить на работу");
         }
     }
 
@@ -67,13 +67,13 @@ public class Main {
         System.out.println("задача 5");
         int age = 20;
         if (age <= 5) {
-            System.out.println("Если возраст ребенка равен" + age + "то ему нельзя кататься на аттракционе");
+            System.out.println("Если возраст ребенка равен " + age + ", то ему нельзя кататься на аттракционе");
         }
         if (age >= 5 && age <= 14) {
-            System.out.println("Если возраст ребенка равен" + age + "то ему кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+            System.out.println("Если возраст ребенка равен " + age + ", то ему кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
         }
         if (age > 14) {
-            System.out.println("Если возраст ребенка равен" + age + "то ему то ему кататься только без сопровождении взрослого");
+            System.out.println("Если возраст ребенка равен " + age + ", то ему то ему кататься только без сопровождении взрослого");
         }
     }
 
@@ -98,20 +98,17 @@ public class Main {
 
     public static void task7() {
         System.out.println("задача 7");
-        int one = 1;
+        int one = 2;
         int two = 2;
-        int three = 3;
-        boolean big = one > two;
-        if (big) {
-            System.out.println("один больше чем два");
+        int three = -60;
+        if (one > two && one > three) {
+            System.out.println("one самое большое число ");
+        } else if (two > one && two > three) {
+            System.out.println("two самое большое число");
+        } else if (three > one && three > two) {
+            System.out.println("three самое большое число");
         } else {
-            System.out.println("один меньше чем два");
-        }
-        boolean bigSecond = two > three;
-        if (bigSecond) {
-            System.out.println("два больше чем три");
-        } else {
-            System.out.println("два меньше чем три");
+            System.out.println("все переменные равны");
         }
     }
-}
+    }
